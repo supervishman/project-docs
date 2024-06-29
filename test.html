@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebar and Content Pane</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 200px;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: black;
+      display: block;
+      padding: 5px;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+    .content {
+      flex: 1;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Navigation</h2>
+      <a href="#page1">Page 1</a>
+      <a href="#page2">Page 2</a>
+      <a href="#page3">Page 3</a>
+    </div>
+    <div class="content">
+      <h1 id="page1">Content for Page 1</h1>
+      <p>This is the content that will be displayed when you click on the "Page 1" link in the sidebar.</p>
+      <h1 id="page2">Content for Page 2</h1>
+      <p>This is the content that will be displayed when you click on the "Page 2" link in the sidebar.</p>
+      <h1 id="page3">Content for Page 3</h1>
+      <p>This is the content that will be displayed when you click on the "Page 3" link in the sidebar.</p>
+    </div>
+  </div>
+</body>
+</html>
+
